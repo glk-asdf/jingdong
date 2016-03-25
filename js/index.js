@@ -58,15 +58,21 @@ window.onload=function(){
     };
     images[index].style.left="0";
     qieqs[index].style.background="#b61b1f";
+    
+        zuoq.style.display="none";
+        youq.style.display="none";
     // 自动切换
     var t=setInterval(yq,2000)
     // 鼠标放上去后停止,离开后自动切换
     imageq.onmouseover=function(){
     	clearInterval(t);
+        zuoq.style.display="block";
+        youq.style.display="block";
     }
     imageq.onmouseout=function(){
     	t=setInterval(yq,2000)
-    	
+    	zuoq.style.display="none";
+        youq.style.display="none";
     }
     // 左切按钮
     zuoq.onclick=function(){
@@ -251,4 +257,17 @@ jrtjyq.onclick=function(){
     animate(jrtjzk[jrtjnum],{left:0});
     jrtjindex=jrtjnum;
 }
+// 猜你喜欢划点
+var cnxh=document.querySelector(".cnxh");
+var cnxhhdw=document.querySelector(".cnxhhdw");
+var cnxhhd=document.querySelector(".cnxhhd");
+    cnxh.onmouseover=function(){
+        cnxhhdw.style.left="0px";
+        cnxhhdw.style.width=0;
+        animate(cnxhhdw,{width:365},3650,function(){
+            animate(cnxhhdw,{left:844},8440);
+        });
+        
+        
+    }
 }
