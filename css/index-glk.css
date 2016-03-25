@@ -668,6 +668,77 @@ a:hover.shu4{
 	font-family: simsun;
 }
 /*今日推荐*/
+/*猜你喜欢*/
+.cainixihuan{
+	width: 1210px;
+	height: 289px;
+	margin: 0 auto;
+}
+.cnxh{
+	width: 1210px;
+	height: 168px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.cnxhdc{
+	height: 36px;
+	overflow: hidden;
+}
+.cnxhc{
+	padding-right: 228px;
+	background: url(../image/homebg.png) 85px -91px;
+	color: #333;
+	float: left;
+	display: inline;
+	line-height: 30px;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: "microsoft yahei";
+}
+.cnxhhyp{
+	float: right;
+	display: block;
+	height: 18px;
+	padding-right: 25px;
+	margin-top: 8px;
+	background: url(../image/homebg.png) -310px -5px no-repeat;
+}
+.cnxhdc a:hover{
+	color: #b72323;
+	background: url(../image/homebg.png) -310px -29px no-repeat;
+}
+.cnxhhw{
+	height: 232px;
+	border: 1px solid #ededed;
+	border-top: 0;
+	overflow: visible;
+}
+.cnxhhuadian{
+	position: relative;
+	height: 1px;
+	line-height: 0;
+	font-size: 0;
+	background-color: #d1d1d1;
+}
+.cnxhhdw{
+	position: absolute;
+	width: 365px;
+	height: 5px;
+	overflow: hidden;
+	left: 844px;
+	top: -2px;
+	
+}
+.cnxhhd{
+	position: absolute;
+	width: 365px;
+	height: 5px;
+	overflow: hidden;
+	top:0;
+	right: 0;
+	background: #b72323 url(../image/homebg.png) no-repeat 0 -124px;
+}
+/*猜你喜欢*/
 /*楼层*/
 .jiayongdianqi{
 	width: 1210px;
