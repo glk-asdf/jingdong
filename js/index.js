@@ -162,4 +162,50 @@ window.onload=function(){
 	// var suij=getclass("suijitupian")[0];
 	// var tup=suij.getElementsByTagName("img")[0];
 	// tup.style.src=suijitp[Math.floor(Math.random()*suijitp.length)]
+    // 楼层中的楼层图标变化
+    var dklctb1=document.querySelector(".dklctb1");
+    var dklctb1z=document.querySelector(".dklctb1z");
+    var jydqlc=document.querySelector(".jydqlc");
+    jydqlc.onmouseover=function(){
+        animate(dklctb1z,{height:0});
+        
+    }
+    jydqlc.onmouseout=function(){
+        dklctb1z.style.height="25px";
+        
+    }
+    // 菜单选项变化
+    var remen=document.querySelector(".remen");
+    var res=remen.querySelectorAll(".re");
+    var rms=remen.querySelectorAll(".rm");
+    var respans=remen.getElementsByTagName("span");
+    for (var i = 0; i < rms.length; i++) {
+        res[i].style.width=rms[i].offsetWidth+1+"px";
+        rms[i].index=i;
+        rms[i].onmouseover=function(){
+            for (var i = 0; i < rms.length; i++) {
+                rms[i].className="rm";                
+            };
+            for (var i = 0; i < respans.length-1; i++) {
+                respans[i].style.display="block";
+                remen.style["border-left-color"]="#ededed";
+                remen.style["border-right-color"]="#ededed";
+            };
+            this.className="rm1"
+            if (this.index==0) {
+                respans[this.index].style.display="none";
+                remen.style["border-left-color"]="#fff";
+            }else if(this.index==rms.length-1){
+                respans[this.index].style.display="none";
+                respans[this.index-1].style.display="none";
+                remen.style["border-right-color"]="#fff";
+
+            }else{
+                respans[this.index].style.display="none";
+                respans[this.index-1].style.display="none";
+            }
+            
+        }
+    };
+
 }
