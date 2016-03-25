@@ -205,7 +205,50 @@ window.onload=function(){
                 respans[this.index-1].style.display="none";
             }
             
-        }
+        }            
+    };            
+                rms[0].className="rm1";            
+                respans[0].style.display="none";
+                remen.style["border-left-color"]="#fff";
+// 今日推荐的无缝轮播
+var jrtjzk=document.querySelectorAll(".jrtjzk");
+var jrtjzq=document.querySelector(".jrtjzq");
+var jrtjyq=document.querySelector(".jrtjyq");
+var jrtjyou=document.querySelector(".jrtjyou");
+var jrtjnum=0;
+var jrtjindex=0;
+jrtjyou.onmouseover=function(){
+    jrtjzq.style.display="block";
+    jrtjyq.style.display="block";
+}
+jrtjyou.onmouseout=function(){
+    jrtjzq.style.display="none";
+    jrtjyq.style.display="none";
+}
+for (var i = 0; i < jrtjzk.length; i++) {
+        jrtjzk[i].style.left="1000px"
     };
-
+    jrtjzk[jrtjindex].style.left=0;
+jrtjzq.onclick=function(){
+    jrtjnum--;
+    if (jrtjnum<0) {jrtjnum=3};    
+    for (var i = 0; i < jrtjzk.length; i++) {
+        jrtjzk[i].style.left="-1000px"
+    };
+    jrtjzk[jrtjindex].style.left=0;
+    animate(jrtjzk[jrtjindex],{left:1000});
+    animate(jrtjzk[jrtjnum],{left:0});
+    jrtjindex=jrtjnum;
+}
+jrtjyq.onclick=function(){
+    jrtjnum++;
+    if (jrtjnum==4) {jrtjnum=0};    
+    for (var i = 0; i < jrtjzk.length; i++) {
+        jrtjzk[i].style.left="1000px"
+    };
+    jrtjzk[jrtjindex].style.left=0;
+    animate(jrtjzk[jrtjindex],{left:-1000});
+    animate(jrtjzk[jrtjnum],{left:0});
+    jrtjindex=jrtjnum;
+}
 }

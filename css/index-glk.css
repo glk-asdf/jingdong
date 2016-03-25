@@ -589,6 +589,85 @@ a:hover.shu4{
 
 }
 /*banner*/
+/*今日推荐*/
+.jinrituijian{
+	width: 1210px;
+	height: 184px;
+	margin:0 auto;
+}
+.jrtj{
+	height: 164px;
+	margin: 10px 0 20px;
+	overflow: hidden;
+}
+.jrtjzuo{
+	float: left;
+	width: 210px;
+	height: 151px;
+	background: url(../image/homebg.png) no-repeat -213px -136px;
+}
+.jrtjyou{
+	position: relative;
+	width: 1000px;
+	height: 164px;
+	float: left;
+	overflow: hidden;
+}
+/*.jrtjydk{
+	width: 4000px;
+	height: 164px;
+	position: absolute;
+	left: 0;
+	top:0;
+}*/
+.jrtjzk{
+	width: 1000px;
+	height: 164px;
+	float: left;
+	position: absolute;
+}
+.jrtjzk a{
+	display: block;
+	float: left;
+	overflow: hidden;
+}
+.jrtjzq{
+	position: absolute;
+	top: 50%;
+	margin-top: -31px;
+	z-index: 1;
+	width: 28px;
+	left: 0;
+	height: 62px;
+	line-height: 62px;
+	background: gray;
+	opacity: 0.4;
+	display: none;
+	color: #fff;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 400;
+	font-family: simsun;
+}
+.jrtjyq{
+	position: absolute;
+	top: 50%;
+	display: none;
+	margin-top: -31px;
+	z-index: 1;
+	width: 28px;
+	right: 0;
+	height: 62px;
+	line-height: 62px;
+	background: gray;
+	opacity: 0.4;
+	color: #fff;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 400;
+	font-family: simsun;
+}
+/*今日推荐*/
 /*楼层*/
 .jiayongdianqi{
 	width: 1210px;
