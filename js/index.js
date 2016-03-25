@@ -58,7 +58,7 @@ window.onload=function(){
     };
     images[index].style.left="0";
     qieqs[index].style.background="#b61b1f";
-    
+
         zuoq.style.display="none";
         youq.style.display="none";
     // 自动切换
@@ -248,7 +248,7 @@ jrtjzq.onclick=function(){
 }
 jrtjyq.onclick=function(){
     jrtjnum++;
-    if (jrtjnum==4) {jrtjnum=0};    
+    if (jrtjnum==4) {jrtjnum=0};
     for (var i = 0; i < jrtjzk.length; i++) {
         jrtjzk[i].style.left="1000px"
     };
