@@ -95,7 +95,7 @@ window.onload=function(){
             colorAnimate(qieqs[this.index],"background","#b61b1f",400)
     	a=animate(images[index],{left:730},500);
     	b=animate(images[this.index],{left:0},500);
-    	index=this.index;
+    	index=num=this.index;
     		}else if (this.index>index) {
     			for (var i = 0; i < images.length; i++) {
     	    images[i].style.left="730px";
@@ -106,7 +106,7 @@ window.onload=function(){
             
     	a=animate(images[index],{left:-730},500);
     	b=animate(images[this.index],{left:0},500);
-    	index=this.index;
+    	index=num=this.index;
     		};
     	}
     };
@@ -169,10 +169,16 @@ window.onload=function(){
 	// var suij=getclass("suijitupian")[0];
 	// var tup=suij.getElementsByTagName("img")[0];
 	// tup.style.src=suijitp[Math.floor(Math.random()*suijitp.length)]
-    // 楼层中的楼层图标变化
-    var dklctb1=document.querySelector(".dklctb1");
-    var dklctb1z=document.querySelector(".dklctb1z");
-    var jydqlc=document.querySelector(".jydqlc");
+    var jydqcaidan=document.querySelectorAll(".jydqcaidan");
+    var yilounr=document.querySelectorAll(".yilounr");
+
+    for (var j = 0; j < jydqcaidan.length; j++) {
+        (function(){
+            // 楼层中的楼层图标变化
+    var dklctb1=jydqcaidan[j].querySelector(".dklctb1");
+    var dklctb1z=jydqcaidan[j].querySelector(".dklctb1z");
+    var jydqlc=jydqcaidan[j].querySelector(".jydqlc");
+    var yilou2=yilounr[j].querySelectorAll(".yilou2");
     jydqlc.onmouseover=function(){
         animate(dklctb1z,{height:0});
         
@@ -182,7 +188,7 @@ window.onload=function(){
         
     }
     // 菜单选项变化
-    var remen=document.querySelector(".remen");
+    var remen=jydqcaidan[j].querySelector(".remen");
     var res=remen.querySelectorAll(".re");
     var rms=remen.querySelectorAll(".rm");
     var respans=remen.getElementsByTagName("span");
@@ -191,14 +197,16 @@ window.onload=function(){
         rms[i].index=i;
         rms[i].onmouseover=function(){
             for (var i = 0; i < rms.length; i++) {
-                rms[i].className="rm";                
+                rms[i].className="rm";
+                yilou2[i].style.display="none";                
             };
             for (var i = 0; i < respans.length-1; i++) {
                 respans[i].style.display="block";
                 remen.style["border-left-color"]="#ededed";
                 remen.style["border-right-color"]="#ededed";
             };
-            this.className="rm1"
+            this.className="rm1";
+            yilou2[this.index].style.display="block";
             if (this.index==0) {
                 respans[this.index].style.display="none";
                 remen.style["border-left-color"]="#fff";
@@ -214,9 +222,13 @@ window.onload=function(){
             
         }            
     };            
-                rms[0].className="rm1";            
+                rms[0].className="rm1";
+                yilou2[0].style.display="block";            
                 respans[0].style.display="none";
                 remen.style["border-left-color"]="#fff";
+        })()
+    };
+    
 // 今日推荐的无缝轮播
 var jrtjzk=document.querySelectorAll(".jrtjzk");
 var jrtjzq=document.querySelector(".jrtjzq");
@@ -311,4 +323,97 @@ xinpinjianhuo[1].onmouseout=function(){
     var img=xinpinjianhuo[1].querySelector("img");
     animate(img,{left:0},200)
 }
+// 一楼轮播
+var yiloulunbo=document.querySelectorAll(".yiloulunbo");
+for (var j = 0; j < yiloulunbo.length; j++) {
+    (function(){
+        var as=yiloulunbo[j].querySelectorAll("a");
+        var spans=yiloulunbo[j].querySelectorAll("span");
+        var lis=yiloulunbo[j].querySelectorAll("li");
+        var num=0;
+        var index=0;
+        var w=as[0].offsetWidth;
+        var frog=true;
+        lis[index].style.background="#c81623";
+        var t=setInterval(youq,1000);
+        yiloulunbo[j].onmouseover=function(){
+            clearInterval(t);
+            spans[0].style.display="block";
+            spans[1].style.display="block";
+        }
+        yiloulunbo[j].onmouseout=function(){
+            t=setInterval(youq,1000);
+            spans[0].style.display="none";
+            spans[1].style.display="none";
+        }
+        spans[0].onclick=function(){
+            zuoq();
+        }
+        spans[1].onclick=function(){
+            youq();
+        }
+        for (var i = 0; i < lis.length; i++) {
+            lis[i].index=i;
+            lis[i].onclick=function(){
+                if (this.index>index) {
+            for (var i = 0; i < as.length; i++) {
+                as[i].style.left=w+"px";
+                lis[i].style.background="#3e3e3e";
+            };
+            as[index].style.left=0;
+            colorAnimate(lis[this.index],"background","#c81623",400)
+            animate(as[index],{left:-w});
+            animate(as[this.index],{left:0});
+                }else if(this.index<index){
+            for (var i = 0; i < as.length; i++) {
+                as[i].style.left=-w+"px";
+                lis[i].style.background="#3e3e3e";
+            };
+            as[index].style.left=0;
+            colorAnimate(lis[this.index],"background","#c81623",400)
+            animate(as[index],{left:w});
+            animate(as[this.index],{left:0});
+                }
+            index=num=this.index; 
+            }
+        };
+        function youq(){
+            num++;
+            if (num==4) {num=0};
+            if (!frog) {return};
+            frog=false;
+            for (var i = 0; i < as.length; i++) {
+                as[i].style.left=w+"px";
+                lis[i].style.background="#3e3e3e";
+            };
+            as[index].style.left=0;            
+            // lis[index].style.background="#c81623";
+            colorAnimate(lis[num],"background","#c81623",400)
+            animate(as[index],{left:-w});
+            animate(as[num],{left:0},function(){
+                frog=true;
+            });
+            index=num;
+        }
+        function zuoq(){
+            num--;
+            if (num<0) {num=3};
+            if (!frog) {return};
+            frog=false;
+            for (var i = 0; i < as.length; i++) {
+                as[i].style.left=-w+"px";
+                lis[i].style.background="#3e3e3e";
+            };
+            as[index].style.left=0;
+            // lis[index].style.background="#c81623";
+            animate(as[index],{left:w});            
+            colorAnimate(lis[num],"background","#c81623",400)
+            animate(as[num],{left:0},function(){
+                frog=true;
+            });
+            index=num;
+        }
+    })()
+
+};
 }
