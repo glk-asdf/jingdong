@@ -147,7 +147,8 @@ window.onload=function(){
 
     
 	// mc中当鼠标放在a上时，span也变红
-	var mca=document.getElementsByTagName("a");	
+    var mc=document.querySelector(".mc");
+	var mca=mc.getElementsByTagName("a");	
 	for (var i = 0; i < mca.length; i++) {
 		mca[i].index=i;
 		mca[i].onmouseover=function(){
@@ -263,11 +264,51 @@ var cnxhhdw=document.querySelector(".cnxhhdw");
 var cnxhhd=document.querySelector(".cnxhhd");
     cnxh.onmouseover=function(){
         cnxhhdw.style.left="0px";
-        cnxhhdw.style.width=0;
-        animate(cnxhhdw,{width:365},3650,function(){
-            animate(cnxhhdw,{left:844},8440);
-        });
-        
+        // cnxhhdw.style.width=0;
+        // animate(cnxhhdw,{width:365},3650,function(){
+           
+        // });
+         animate(cnxhhdw,{left:844});
         
     }
+// 猜你喜欢内容变化
+var cnxhnr=document.querySelectorAll(".cnxhnr");
+var cnxhhyp=document.querySelector(".cnxhhyp");
+cnxhnr[0].style.display="block";
+var cnxh=0;
+cnxhhyp.onclick=function(){
+    for (var i = 0; i < cnxhnr.length; i++) {
+        cnxhnr[i].style.display="none";
+    };
+    var suiji=Math.floor(Math.random()*cnxhnr.length);
+    while(suiji==cnxh){
+        suiji=Math.floor(Math.random()*cnxhnr.length);
+    }
+    cnxhnr[suiji].style.display="block";
+    cnxh=suiji;
+}
+// 图片左移
+var xinpinjianhuo=document.querySelectorAll(".xinpinjianhuo");
+// var xinpinjianhuofrog=true;
+
+xinpinjianhuo[0].onmouseover=function(){
+    
+    var img=xinpinjianhuo[0].querySelector("img");
+    animate(img,{left:-8},200)
+}
+xinpinjianhuo[0].onmouseout=function(){
+
+    var img=xinpinjianhuo[0].querySelector("img");
+    animate(img,{left:0},200)
+}
+xinpinjianhuo[1].onmouseover=function(){
+    
+    var img=xinpinjianhuo[1].querySelector("img");
+    animate(img,{left:-8},200)
+}
+xinpinjianhuo[1].onmouseout=function(){
+
+    var img=xinpinjianhuo[1].querySelector("img");
+    animate(img,{left:0},200)
+}
 }

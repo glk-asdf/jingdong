@@ -676,9 +676,9 @@ a:hover.shu4{
 }
 .cnxh{
 	width: 1210px;
-	height: 168px;
+	height: 268px;
 	margin-bottom: 20px;
-	overflow: hidden;
+	overflow: visible;
 }
 .cnxhdc{
 	height: 36px;
@@ -738,7 +738,163 @@ a:hover.shu4{
 	right: 0;
 	background: #b72323 url(../image/homebg.png) no-repeat 0 -124px;
 }
+.cnxhnr{
+	height: 210px;
+	padding-top: 20px;
+	overflow: hidden;
+	display: none;
+}
+.cnxhnr1{
+	width: 201px;
+	float: left;
+	overflow: hidden;
+	padding-bottom: 15px;
+
+}
+.cnxhnrimg{
+	text-align: center;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.cnxhnrimg a{
+
+	display: block;
+	
+}
+.cnxhnrwenzi{
+	padding: 0 36px;
+	border-left: 1px solid #e6e6e6;
+}
+.cnxhnrwenzi a{
+	display: block;
+	height: 36px;
+	margin-bottom: 6px;
+	overflow: hidden;
+	text-align: center;
+}
+.cnxhnrwenzi a:hover{
+	color: #C81623;
+}
+.cnxhnrjiage{
+	color:#b51d1a;
+	/*text-align: center;*/
+	font-size: 18px;
+}
+.cnxhnrjiage i{
+	font-size: 14px;
+	font-style: normal;
+	color:#b51d1a;
+}
 /*猜你喜欢*/
+/*品质生活*/
+.pinzhishenghuo{
+	/*background: url(../image/loading.gif) no-repeat center center;*/
+	width: 1210px;
+	margin:0 auto;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.pzsh{
+	width: 1210px;
+	border-bottom: 20px;
+}
+.pzsh h2{
+	color: #333;
+	font-size: 20px;
+	line-height: 36px;
+	font-family: "microsoft yahei";
+	font-weight: 400;
+}
+.pzshnr{
+	height: 405px;
+	border: 1px solid #ededed;
+	overflow: hidden;
+}
+.xinfaxian{
+	background: #f7f7f7;
+	float: left;
+	height: 100%;
+}
+.xinpinjianhuo{
+	width: 403px;
+	position: relative;
+	display: block;
+	height: 246px;
+	border-bottom: 1px solid #ededed;
+	border-right: 1px solid #ededed;
+	overflow: hidden;
+	text-align: center;
+}
+.xfx{
+	font: 700 15px/40px 'Microsoft Yahei';
+	color: #333;
+	text-align: center;
+	z-index: 1;
+	border-bottom: 1px dashed #e0e0e0;
+	margin: 0 20px;
+}
+.xinpinjianhuo .mingcheng{
+	position: absolute;
+	left: 45px;
+	top: 109px;
+	color: #333;
+	font-family: 'Microsoft Yahei';
+	line-height: 1.2;
+	z-index: 2;
+}
+.tit{
+	font-weight: 700;
+	font-size: 16px;
+	margin-bottom: 12px;
+}
+.desc{
+	margin-bottom: 4px;
+}
+.promotion{
+	color: #c81623;
+}
+.xinpinjianhuo img{
+	position: absolute;
+	left: 0;
+}
+.yushouqiangxian{
+	float: left;
+	width: 201px;
+	height: 158px;
+	position: relative;
+	border-right: 1px solid #ededed;
+	overflow: hidden;
+}
+.yushouqiangxian .mingcheng{
+	display: block;
+	position: absolute;
+	left: 10px;
+	top: 48px;
+	color: #333;
+	font-family: 'Microsoft Yahei';
+	line-height: 1.2;
+	z-index: 2;
+}
+.chuangyihaohuo{
+	width: 228px;
+	position: relative;
+	display: block;
+	height: 246px;
+	border-bottom: 1px solid #ededed;
+	border-right: 1px solid #ededed;
+	overflow: hidden;
+	text-align: center;
+}
+.chuangyihaohuo .mingcheng{
+	position: absolute;
+	left: 10px;
+	top: 109px;
+	color: #333;
+	font-family: 'Microsoft Yahei';
+	line-height: 1.2;
+	z-index: 2;
+}
+/*品质生活*/
 /*楼层*/
 .jiayongdianqi{
 	width: 1210px;
