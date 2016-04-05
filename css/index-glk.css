@@ -1725,3 +1725,128 @@ a:hover.shu4{
 	
 }
 /*六楼*/
+/*十楼*/
+#shilouts{
+	height: 236px;
+}
+#shiloulunbo{
+	height: 236px;
+}
+.shilouer{
+	width: 440px;
+	float: left;
+}
+.shilousan{
+	width: 340px;
+	height: 473px;
+	float: left;
+}
+.shilousan1{
+	height: 34px;
+	padding-top: 13px;
+	border-right: 1px solid #EDEDED;
+}
+.shilousan1 h3{
+	margin: 0 15px 0 10px;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	line-height: 23px;
+	border-bottom: 1px solid #e4e4e4;
+	font-family: "microsoft yahei";
+	font-weight: 400;
+}
+.shilousan2{
+	height: 426px;
+	padding-left: 15px;
+	border-right: 1px solid #EDEDED;
+	border-bottom: 1px solid #EDEDED;
+	/*float: left;*/
+}
+.shilousan2 li{
+	height: 80px;
+	padding-top: 20px;
+	overflow: hidden;
+}
+.shilouzz{
+	float: left;
+	width: 48px;
+	display: block;
+	padding: 2px 15px 0 4px;
+	text-align: center;
+}
+.shilouzz img{
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	margin-bottom: 6px;
+}
+.shilouzz span{
+	display: block;
+	height: 18px;
+	overflow: hidden;
+}
+.shilouzz span:hover{
+	color: #C81623;
+}
+.shilouzze{
+	float: left;
+	padding-left: 8px;
+	display: block;
+	width: 80px;
+	height: 80px;
+	border-left: 1px dotted #dbdbdb;
+}
+.shilouzze img{
+	width: 80px;
+	height: 80px;
+}
+.shilounr{
+	float: left;
+	padding-left: 10px;
+}
+.shilounr a{
+	width: 150px;
+	height: 18px;
+	display: block;
+	margin-bottom: 5px;
+	font-size: 14px;
+	font-family: "microsoft yahei";
+}
+.shiloumj{
+	position: relative;
+width: 115px;
+height: 34px;
+padding: 10px 15px 10px 20px;
+background: #f8f8f8;
+color: #999;
+overflow: visible;
+}
+.shiloumj p{
+	height: 38px;
+	overflow: hidden;
+}
+.shiloumj p span{
+	font-size: 38px;
+	line-height: 38px;
+	color: #aaa;
+	vertical-align: -24px;
+	font-family: Arial;
+}
+.shiloujian{
+	position: absolute;
+	left: -9px;
+	top: 19px;
+	color: #f8f8f8;
+	font-size: 20px;
+}
+.shilouzyh{
+	position: absolute;
+	left: 4px;
+	top: 7px;
+	font-size: 38px;
+	line-height: 38px;
+	color: #aaa;
+	font-family: Arial;
+}
+/*十楼*/
