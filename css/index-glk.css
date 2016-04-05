@@ -1226,6 +1226,7 @@ a:hover.shu4{
 	background: rgba(255,255,255,.7);
 	position: relative;
 	font-family: \5b8b\4f53;
+	color:#999;
 }
 .fuer1{
 	height: 96px;
@@ -1642,5 +1643,85 @@ a:hover.shu4{
 
 }
 /*二楼*/
-
-
+/*三楼*/
+#erlou3{
+	width: 880px;
+	height: 474px;
+}
+#sanloufuyi{
+	margin-top: -237px;
+	height: 46px;
+}
+#sanlounz{
+	width: 98px;
+}
+#sanlounznr1{
+	background: url(../image/mobilesicon.png) 0 0 no-repeat;
+}
+#sanlounznr2{
+	background: url(../image/mobilesicon.png) 0 -26px no-repeat;
+}
+#sanlounznr3{
+	background: url(../image/mobilesicon.png) 0 -52px no-repeat;
+}
+#sanloufuer{
+	height: 121px;
+}
+#sanloufuer1{
+	padding-top: 7px;
+}
+.sanloufusan{
+	position: relative;
+	height: 48px;
+	padding: 21px 0 0;
+	font-size: 14px;
+	line-height: 24px;
+	overflow: hidden;
+	background: rgba(255,255,255,.7);
+}
+.sanloufusan li{
+	float: left;
+	width: 135px;
+	height: 24px;
+	padding-left: 25px;
+	overflow: hidden;
+	font-size: 14px;
+	line-height: 24px;
+}
+.sanloufusan li a:hover{
+	color: #C81623;
+}
+#sanloulunbo{
+	height: 235px;
+}
+#sanloulunbo a{
+	width: 439px;
+	height: 236px;
+}
+.sanlouyj{
+	display: block;
+	float: left;
+	height: 117px;
+	border-right: 1px solid #EDEDED;
+	border-bottom: 1px solid #EDEDED;
+	overflow: hidden;
+}
+.sanloumd{
+	display: block;
+	float: left;
+	height: 237px;
+	border-right: 1px solid #EDEDED;
+	border-bottom: 1px solid #EDEDED;
+	overflow: hidden;
+}
+/*三楼*/
+/*六楼*/
+.liulouyi{
+	width: 220px;
+	/*height: 474px;*/
+	float: left;
+}
+.liulouer{
+	
+}
+/*六楼*/
