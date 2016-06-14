@@ -1715,16 +1715,77 @@ a:hover.shu4{
 	overflow: hidden;
 }
 /*三楼*/
+/*四楼*/
+#siloufuyi{
+	margin-top: -237px;
+	height: 46px;
+	padding-left: 10px;
+	width: 320px;
+}
+#silounz{
+	width: 145px;
+	padding-left: 15px;
+}
+#silounznr1{
+	background: url(../image/f4-icon.png) 0 0 no-repeat;
+}
+#silounznr2{
+	background: url(../image/f4-icon.png) 0 -26px no-repeat;
+}
+/*四楼*/
+/*五楼*/
+#wulounznr1{
+	background: url(../image/f5icon.png) 0 0 no-repeat;
+}
+#wulounznr2{
+	background: url(../image/f5icon.png) 0 -26px no-repeat;
+}
+/*五楼*/
 /*六楼*/
+.liulou22xk{
+	float: left;
+	height: 236px;
+	width: 219px;
+	border-right: 1px solid #EDEDED;
+	border-bottom: 1px solid #EDEDED;
+	overflow: hidden;
+	font-size: 0;
+}
 .liulouyi{
 	width: 220px;
 	/*height: 474px;*/
 	float: left;
 }
+#liulouyd1{
+	background: url(../image/f6-icon.png) 0 0 no-repeat;
+}
+#liulouyd2{
+	background: url(../image/f6-icon.png) 0 -26px no-repeat;
+}
+#liulouyd3{
+	background: url(../image/f6-icon.png) 0 -52px no-repeat;
+}
+#liulouyd4{
+	background: url(../image/f6-icon.png) 0 -78px no-repeat;
+}
 .liulouer{
 	
 }
 /*六楼*/
+/*七楼*/
+#qilounz1{
+	background: url(../image/f7icon.png) 0 0 no-repeat;
+}
+#qilounz2{
+	background: url(../image/f7icon.png) 0 -26px no-repeat;
+}
+#qilounz3{
+	background: url(../image/f7icon.png) 0 -52px no-repeat;
+}
+#qilounz4{
+	background: url(../image/f7icon.png) 0 -78px no-repeat;
+}
+/*七楼*/
 /*十楼*/
 #shilouts{
 	height: 236px;
@@ -1850,3 +1911,209 @@ overflow: visible;
 	font-family: Arial;
 }
 /*十楼*/
+/*十一楼*/
+#shiyilou2 {
+width: 1000px;
+height: 474px;
+display: block;
+}
+#shiyiloulunbo{
+	height: 236px;
+	width: 394px;
+	/*border:0;*/
+}
+#shiyilouer{
+	width: 395px;
+}
+.shiyiloudp{
+	border-right: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb; 
+	width: 196px;
+	height: 117px;
+	float: left;
+	display: block;
+}
+.shiyiloudp img{
+	padding: 0;
+	margin: 0;
+}
+/*十2楼*/
+/*foot start*/
+.foot{
+  width: 1349px;
+  height: 457px;
+  margin: auto;
+}
+.foot_top{
+  width: 1349px;
+  height: 276px;
+  margin-bottom: 20px;
+}
+.d-k-h-s{
+ width: 1349px;
+ height: 54px;
+ padding:20px 0;
+ margin-bottom: 14px;
+ position: relative;
+ background: #f5f5f5;
+ text-align: center;
+}
+.d-k-h-s span{
+  width: 302px;
+  height: 54px;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top:20px;
+  text-align: left;
+  vertical-align: middle;
+  font:400 18px/50px "microsoft yahei";
+}
+.duo{
+  margin-left: -604px;
+}
+#d-k-h-s{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 220px;
+  height: 54px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.duo #d-k-h-s{
+ background: url(../image/duo.png) ;
+
+}
+.d-k-h-s b{
+  padding:0 10px;
+  font-size: 24px;
+  color: #c81623;
+}
+.kuai{
+ margin-left: -304px;
+}
+.kuai #d-k-h-s{
+ background: url(../image/kuai.png) ;
+
+}
+.hao{
+ margin-left: 0;
+}
+.hao #d-k-h-s{
+ background: url(../image/hao.png) ;
+
+}
+.sheng{
+ margin-left: 304px;
+}
+.sheng #d-k-h-s{
+ background: url(../image/sheng.png) ;
+
+}
+
+.bangzhu{
+ width: 1211px;
+ height: 168px;
+ margin:0 69px;
+
+}
+.bangzhu dl{
+  float: left;
+}
+.bangzhu dt{
+ width: 199px;
+ height: 24px;
+ padding:6px 0;
+ font:400 16px/24px "microsoft yahei";
+}
+.bangzhu dd{
+  width: 199px;
+  height: 120px;
+  line-height: 20px;
+}
+.bangzhu div{
+  width: 199px;
+  height: 20px;
+}
+.foot div a:hover{
+  color: #c81623;
+}
+
+.bangzhu1{
+  width: 199px;
+  height: 156px;
+}
+
+.bangzhu2,.bangzhu3,.bangzhu4{
+  width: 199px;
+  height: 136px;
+}
+
+.bangzhu5{
+  width: 100px;
+  height: 156px;
+}
+.coverage{
+  width: 310px;
+  height: 168px;
+  float: right;
+  background: url(../image/ditu.png) no-repeat 60px -131px;
+}
+.dt{
+ width: 190px;
+ height: 24px;
+ padding:6px 40px 15px 80px;
+ font:400 16px/24px "microsoft YaHei";
+}
+.dd{
+ width: 190px;
+ height: 72px;
+ padding:0 40px 15px 80px;
+}
+.dd p{
+ width: 190px;
+ height: 54px;
+}
+.ar{
+ width: 190px;
+ height: 18px;
+ text-align: right;
+
+}
+.foot_bottom{
+  width: 1211px;
+  height: 195px;
+  margin: 0 69px;
+}
+#foot_bottom{
+  width: 1211px;
+  height: 144px;
+  padding:20px 0 30px;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+}
+.link{
+ width: 1211px;
+ height: 18px;
+}
+.copyright{
+  width: 1211px;
+  height: 74px;
+  margin:10px 0;
+}
+.authentication{
+  width: 1211px;
+  height: 32px;
+
+}
+.links a{
+  margin:0 10px;
+}
+.authentication a{
+  margin:0 5px;
+}
+
+
+/*foot end*/

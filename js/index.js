@@ -172,7 +172,7 @@ window.onload=function(){
     var jydqcaidan=document.querySelectorAll(".jydqcaidan");
     var yilounr=document.querySelectorAll(".yilounr");
 
-    for (var j = 0; j < jydqcaidan.length; j++) {
+    for (var j = 0; j < 10; j++) {
         (function(){
             // 楼层中的楼层图标变化
     var dklctb1=jydqcaidan[j].querySelector(".dklctb1");
@@ -335,14 +335,14 @@ for (var j = 0; j < yiloulunbo.length; j++) {
         var w=as[0].offsetWidth;
         var frog=true;
         lis[index].style.background="#c81623";
-        var t=setInterval(youq,1000);
+        var t=setInterval(youq,10000);
         yiloulunbo[j].onmouseover=function(){
             clearInterval(t);
             spans[0].style.display="block";
             spans[1].style.display="block";
         }
         yiloulunbo[j].onmouseout=function(){
-            t=setInterval(youq,1000);
+            t=setInterval(youq,10000);
             spans[0].style.display="none";
             spans[1].style.display="none";
         }
@@ -378,9 +378,9 @@ for (var j = 0; j < yiloulunbo.length; j++) {
             }
         };
         function youq(){
+            if (!frog) {return};
             num++;
             if (num==4) {num=0};
-            if (!frog) {return};
             frog=false;
             for (var i = 0; i < as.length; i++) {
                 as[i].style.left=w+"px";
@@ -396,9 +396,9 @@ for (var j = 0; j < yiloulunbo.length; j++) {
             index=num;
         }
         function zuoq(){
+            if (!frog) {return};
             num--;
             if (num<0) {num=3};
-            if (!frog) {return};
             frog=false;
             for (var i = 0; i < as.length; i++) {
                 as[i].style.left=-w+"px";
